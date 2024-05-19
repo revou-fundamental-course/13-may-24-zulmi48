@@ -12,29 +12,53 @@
             <div class="gambar">
                 <img src="image/rumus-segitiga.jpg" alt="Segitiga" />
             </div>
-            <div class="form-area">
-                <div class="form">
-                    <label for="a">Sisi A:</label>
-                    <input type="number" id="sisi-a" placeholder="Masukkan panjang sisi A" />
+            <div class="menu">
+                <button class="switch" onclick="menuKeliling()">Keliling</button>
+                <button class="switch" onclick="menuLuas()">Luas</button>
+            </div>
+
+            <!-- Form untuk menghiung Luas -->
+            <div id="area-luas">
+                <h3>Hitung Luas</h3>
+                <div class="hitung-luas">
+                    <div class="form">
+                        <label for="alas">Alas :</label>
+                        <input type="number" id="alas" placeholder="Masukkan alas" />
+                    </div>
+                    <div class="form">
+                        <label for="tinggi">Tinggi:</label>
+                        <input type="number" id="tinggi" placeholder="Masukkan tinggi" />
+                    </div>
                 </div>
-                <div class="form">
-                    <label for="b">Sisi B:</label>
-                    <input type="number" id="sisi-b" placeholder="Masukkan panjang sisi B" />
-                </div>
-                <div class="form">
-                    <label for="c">Sisi C:</label>
-                    <input type="number" id="sisi-c" placeholder="Masukkan panjang sisi C" />
-                </div>
-                <div class="form">
-                    <label for="t">Tinggi:</label>
-                    <input type="number" id="tinggi" placeholder="Masukkan tinggi segitiga" />
+                <div class="hitung-luas">
+                    <button class="btn-hitung" onclick="luas()">Hitung</button>
+                    <h4 id="luas">Hasil</h4>
                 </div>
             </div>
-            <button onclick="hitung()">Hitung</button>
-            <div class="hasil">
-                <p id="area"></p>
-                <p id="perimeter"></p>
+
+            <!-- Form untuk menghitung Keliling -->
+            <div id="area-keliling">
+                <h3>Hitung Keiling</h3>
+                <div class="hitung-keliling">
+                    <div class="form">
+                        <label for="a">Sisi A:</label>
+                        <input type="number" id="sisi-a" placeholder="Masukkan panjang sisi A" />
+                    </div>
+                    <div class="form">
+                        <label for="b">Sisi B:</label>
+                        <input type="number" id="sisi-b" placeholder="Masukkan panjang sisi B" />
+                    </div>
+                    <div class="form">
+                        <label for="c">Sisi C:</label>
+                        <input type="number" id="sisi-c" placeholder="Masukkan panjang sisi C" />
+                    </div>
+                </div>
+                <div class="hitung-keliling">
+                    <button class="btn-hitung" onclick="keliling()">Hitung</button>
+                    <h4 id="keliling">Hasil</h4>
+                </div>
             </div>
+
         </div>
 
         <script src="js/script.js"></script>

@@ -2,10 +2,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 2rem;
 }
 
 .container {
@@ -17,22 +18,27 @@ body {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
 .gambar img{
     width: auto;
     height: 200px;
 }
 
-.form-area{
+.hitung-keliling{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    width: 600px;
+}
+
+.hitung-luas{
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
     margin-top: 10px;
+    align-items: center;
+    width: 600px;
 }
 
 .form {
@@ -56,7 +62,8 @@ input {
     box-sizing: border-box;
 }
 
-button {
+.btn-hitung {
+    height: 40px;
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -68,12 +75,37 @@ button {
     transition: background-color 0.2s;
 }
 
-button:hover {
+.btn-hitung:hover {
     background-color: #0056b3;
 }
-
+.menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.switch{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: aqua;
+    color: #3d3d3d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.switch:hover{
+    background-color: aquamarine;
+}
 .hasil {
     margin-top: 20px;
     font-size: 16px;
     color: #333;
+}
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
 }
