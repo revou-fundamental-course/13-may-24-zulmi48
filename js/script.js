@@ -20,6 +20,7 @@ function luas() {
     const luas = 0.5 * alas * tinggi;
     document.getElementById("luas").innerText = `Luas: ${luas}`;
 
+    // Reset Value
     document.getElementById("alas").value = "";
     document.getElementById("tinggi").value = "";
 }
@@ -47,9 +48,11 @@ function keliling() {
 function menuKeliling() {
     areaKeliling.classList.toggle("show");
     areaKeliling.classList.toggle("hidden");
+    document.getElementById("keliling").innerText = "Hasil";
 }
 
 function menuLuas() {
     areaLuas.classList.toggle("show");
     areaLuas.classList.toggle("hidden");
+    document.getElementById("luas").innerText = "Hasil";
 }
