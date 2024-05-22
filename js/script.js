@@ -2,8 +2,8 @@ const areaKeliling = document.getElementById("area-keliling");
 const areaLuas = document.getElementById("area-luas");
 
 function hidden() {
-    areaLuas.classList.add('hidden');
-    areaKeliling.classList.add('hidden');
+    areaLuas.classList.add("hidden");
+    areaKeliling.classList.add("hidden");
 }
 
 hidden();
@@ -18,7 +18,10 @@ function luas() {
 
     // Menghitung luas
     const luas = 0.5 * alas * tinggi;
-    document.getElementById("luas").innerText = `Luas: ${luas}`;
+    document.getElementById("luas").innerHTML = `
+        Luas: 1/2 x Alas X Tinggi <hr>
+        Luas: 1/2 x ${alas} x ${tinggi} = ${luas}
+    `;
 
     // Reset Value
     document.getElementById("alas").value = "";
@@ -37,7 +40,10 @@ function keliling() {
 
     // Menghitung keliling
     const keliling = a + b + c;
-    document.getElementById("keliling").innerText = `Keliling: ${keliling}`;
+    document.getElementById("keliling").innerHTML = `
+        Keliling: Sisi A + Sisi B + Sisi C <hr>
+        Keliling: ${a} + ${b} + ${c} = ${keliling}
+    `;
 
     // Reset Value
     document.getElementById("sisi-a").value = "";
